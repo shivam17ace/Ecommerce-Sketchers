@@ -10,7 +10,6 @@ const Route = require("./Routes/index");
 app.use(bodyparser.json());
 app.use(express.json());
 app.use(mongoSanitize());
-app.use(cors());
 app.use("/", Route);
 
 app.get('/', (req, res) => {
